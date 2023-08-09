@@ -121,5 +121,11 @@ describe("solana_app", () => {
     expect(account.claimed == "Claimed")
 
   })
+
+  it("Close redeem", async() => {
+    const tx = await program_loot.methods.closePointer().rpc();
+
+    console.log(`https://explorer.solana.com/tx/${tx}?cluster=devnet`)
+  })
     
 });

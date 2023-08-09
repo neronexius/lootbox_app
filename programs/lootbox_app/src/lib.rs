@@ -28,5 +28,9 @@ pub mod lootbox_app {
     pub fn redeem_lootbox(mut ctx: Context<RedeemMint>) -> Result<()> {
         RedeemMint::redeem_lootbox(&mut ctx)
     }
+
+    pub fn close_pointer(_ctx: Context<Close>) -> Result<()>{
+        Ok(())
+    }
 }
 
